@@ -1,0 +1,295 @@
+body,html{
+	scroll-behavior: smooth;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Black Ops One';
+}
+/** BG-Video part **/
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: rgba(0,0,0,0.25);
+	color: white;
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+
+}
+.bg-video{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: flex;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+	transform: translate(-50%,-50%);
+}
+.navbar{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	top: 0;
+	position: fixed;
+	background-color: black;
+	z-index: 1;
+} 
+.logo{
+	width: 5%;
+	height: 5%;
+	cursor: pointer;
+}
+.welcome{
+	margin-top: 50px;
+	min-width: 200px;
+	display: flex;
+	height: auto;
+}
+
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: yellow;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	background: yellow;
+	height: 3px;
+	width: 0%;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}	
+.content{
+	width: auto;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+}
+.content h1{
+	font-size: 40px;
+	padding-top: 10px;
+}
+.content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+#start{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border:2px solid white;
+	background: transparent;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+#start:hover{
+	color: black;
+
+}
+span{
+	background: #ffeb1a;
+	height: 100%;
+	width: 0%;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+
+}
+#start:hover span{
+	width: 100%;
+}
+#start:hover{
+	border:none;
+}	
+
+/* section login */
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(codm-wallpaper.jpeg);
+	background-size: cover;
+	background-position: center;
+	
+}
+.container{
+	position: absolute;
+	right: left 0;
+	box-sizing: border-box;
+	text-align: left;
+	margin: 20px;
+	width: 30%;
+	padding: 16px;
+	background-color: transparent;
+	}
+input[type=text],input[type=password]{
+	width: 100%;
+	display: inline-block;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border:none;
+	background:white;
+	opacity: 70%;
+}
+input[type=text],input[type=password]:focus{
+	background: white;
+	outline: 1px black;
+}
+input[type=text],input[type=password]:hover{
+	opacity: 1;
+}
+.btn{
+	background-color: black;
+	color: yellow;
+	padding: 16px 20px;
+	border:none;
+	cursor: pointer;
+	width: 100%;
+	opacity:0.5;
+}
+.btn:hover{
+	opacity: 1;
+}
+.login{
+	padding-top: 30px;
+}
+.login h1{
+	color:white;
+	font-size: 30px;
+}
+.container {
+	color: #ffeb1a;
+}
+.container h1{
+	color: #ffeb1a;
+	font-size: 20px;
+}
+.multiplay{
+	width: 100%;
+	height: 80vh;
+	background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(multiplay.jpg);
+	background-size: cover;
+	background-position: center;	
+}
+.royale{
+	width: 100%;
+	height: 80vh;
+	background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(royale.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.multiplay h2{
+	color: #ffeb1a;
+	font-size: 40px;
+}
+.royale h2{
+	color: #ffeb1a;
+	font-size: 40px;
+}
+/**characters **/
+div.gallery{
+	border:1px solid #ccc;
+}
+div.gallery:hover{
+	border: 1px solid black;
+}
+div.gallery img{
+	width: 100%;
+	height: auto;
+}
+div.desc{
+	padding: 15px;
+	text-align: center;
+}
+*{
+	box-sizing: border-box;
+}
+.responsive{
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+}
+@media only screen and (max-width: 700px){
+.responsive{
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/**footer**/
+.footer{
+	padding-top: 30px;
+	height: 50vh;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+.copyright{
+	bottom: 0;
+	position: absolute;
+}
+.fa{
+	padding: 10px;
+	font-size: 30px;
+	width: 50px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	display: inline-block;
+}
+.fa:hover{
+	opacity: 0.7;
+}
+.fa-facebook{
+	background: #3B5998;
+	color: white;
+}
+.fa-twitter{
+	background: #55ACEE;
+	color: white;	
+}
+.fa-instagram{
+	background: #125688;
+	color: white;	
+}
+@media only screen and (max-width: 700px){
+.sponsors{
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
